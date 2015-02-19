@@ -1,0 +1,105 @@
+@import 'bootstrap';
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+  background: #1f729b; /* Old browsers */
+  background: -moz-linear-gradient(top, #1f729b 0%, #2989d8 43%, #dd9f23 82%, #050402 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f729b), color-stop(43%,#2989d8), color-stop(82%,#dd9f23), color-stop(100%,#050402)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1f729b 0%,#2989d8 43%,#dd9f23 82%,#050402 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1f729b 0%,#2989d8 43%,#dd9f23 82%,#050402 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1f729b 0%,#2989d8 43%,#dd9f23 82%,#050402 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #1f729b 0%,#2989d8 43%,#dd9f23 82%,#050402 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f729b', endColorstr='#050402',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  align-content: center;
+}
+
+
+#container {
+  min-height:100%;
+  position:relative;
+
+  width: 100%;
+}
+#header {
+
+  padding:10px;
+}
+
+#content {
+  min-width: 100%;
+  float: right;
+  padding:10px;
+  padding-bottom:6em;   /* Height of the footer */
+  font-size: 28px;
+  font-family: "Georgia", Helvetica, serif;
+}
+
+#content, p {
+  line-height: 25px;
+}
+
+#footer {
+  background-color: #000000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width:100%;
+  position: absolute;
+  bottom:0;
+  left:0;
+
+  height:6em;   /* Height of the footer */
+}
+
+#sidebar {
+  position: absolute;
+  width: 100%;
+  padding-top: 20em;
+  padding-left: 12%;
+  align-content: center;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider {
+
+  overflow: hidden;
+  width: 40%;
+  height: 30%;
+  align-content: center;
+}
+
+
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+
+  text-align: center;
+  align-content: center;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+div#slider figure img {
+  width: 20%;
+
+}
+
+
+
+
